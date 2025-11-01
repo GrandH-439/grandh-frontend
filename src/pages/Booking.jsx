@@ -15,7 +15,7 @@ const Booking = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // ✅ Use Render backend URL (fallback for production)
+  // ✅ Use Render backend URL (no extra /bookings at the end)
   const API_BASE_URL =
     import.meta.env.VITE_API_URL || "https://grandh-backend.onrender.com/api";
 
@@ -24,6 +24,7 @@ const Booking = () => {
     setIsSubmitting(true);
 
     try {
+      // ✅ Correct endpoint → /api/bookings
       const response = await axios.post(`${API_BASE_URL}/bookings`, formData, {
         headers: { "Content-Type": "application/json" },
         timeout: 20000,
