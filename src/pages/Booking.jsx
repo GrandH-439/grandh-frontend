@@ -14,7 +14,10 @@ const Booking = () => {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const API_BASE_URL = import.meta.env.VITE_API_URL;
+
+  // ✅ Use Render backend URL (fallback for production)
+  const API_BASE_URL =
+    import.meta.env.VITE_API_URL || "https://grandh-backend.onrender.com/api";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
