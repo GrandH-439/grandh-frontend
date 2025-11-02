@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="nav-container">
         {/* Logo */}
         <Link to="/" className="nav-logo" onClick={() => setMenuOpen(false)}>
-          <img src="/favicon.png" alt="GH Logo" className="gh-logo" />
+          <img src="/favicon-new.png" alt="GH Logo" className="gh-logo" />
           <span className="logo-text">GH</span>
         </Link>
 
