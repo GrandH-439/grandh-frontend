@@ -3,19 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Grand H Barber Shop Website" />
 
-    <!-- ✅ Favicon setup -->
-    <link rel="icon" href="/favicon-new.png" type="image/png" />
-    <link rel="shortcut icon" href="/favicon-new.png" type="image/png" />
+    <!-- Theme and description -->
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Grand H Barber Shop - Sharp cuts. Sleek style. Clean fades for confident men." />
+
+    <!-- ✅ Favicon setup (must be inside /public folder) -->
+    <link rel="icon" type="image/png" href="/favicon-new.png" />
+    <link rel="shortcut icon" type="image/png" href="/favicon-new.png" />
     <link rel="apple-touch-icon" href="/favicon-new.png" />
 
+    <!-- ✅ SEO & Branding -->
     <title>Grand H Barber Shop</title>
+    <meta property="og:title" content="Grand H Barber Shop" />
+    <meta
+      property="og:description"
+      content="Sharp cuts. Sleek style. Experience the confidence of Grand H Barber Shop."
+    />
+    <meta property="og:image" content="/favicon-new.png" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
   </head>
 
   <body>
     <div id="root"></div>
+
+    <!-- ✅ Entry point for React app -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
