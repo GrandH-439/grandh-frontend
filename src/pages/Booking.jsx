@@ -15,16 +15,18 @@ const Booking = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // ✅ Use Render backend URL (no extra /bookings at the end)
+  // ✅ Ensure this points exactly to your backend /api
   const API_BASE_URL =
-    import.meta.env.VITE_API_URL || "https://grandh-backend.onrender.com/api";
+    import.meta.env.VITE_API_URL?.trim() || "https://grandh-backend.onrender.com/api";
+
+  console.log("🌍 Using API_BASE_URL:", API_BASE_URL); // Debugging line
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     try {
-      // ✅ Correct endpoint → /api/bookings
+      // ✅ POST to /bookings
       const response = await axios.post(`${API_BASE_URL}/bookings`, formData, {
         headers: { "Content-Type": "application/json" },
         timeout: 20000,
