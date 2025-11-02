@@ -1,15 +1,15 @@
 {
-  "name": "barber-connect",
+  "name": "grandh-frontend",
   "version": "1.0.0",
-  "description": "Grand H Barber website built with React + Vite.",
+  "description": "Grand H Barber Shop — clean cuts, sharp looks. Built with React + Vite.",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["barber", "salon", "grandh", "haircut", "react", "vite"],
+  "author": "Grand H",
   "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.1.0",
